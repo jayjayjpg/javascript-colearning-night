@@ -6,7 +6,6 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css" >
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 </head>
 <body>
   <main class="panorama">
@@ -20,36 +19,5 @@
     <p class="pt-1 blend blend-4"><a href="http://intranet/infoserv/cgi-bin/calendar/id.asp?ID=57288" class="cta" id="mainCTA">Save Your Free Seat</a></p>
     </div>
   </main>
-  <script type="text/javascript">
-  (function(){
-      
-      function doesUrlExist(url,cb){
-        jQuery.ajax({
-            url:      url,
-            dataType: 'text',
-            type:     'GET',
-            complete:  function(xhr){
-                if(typeof cb === 'function')
-                  cb.apply(this, [xhr.status]);
-            }
-        });
-      }
-      var ctaUrl = document.getElementById("mainCTA").href;
-      console.log(ctaUrl);
-      doesUrlExist(ctaUrl, function(status){
-        if(status === 200){
-          // file was found
-          console.log("ok");
-        }
-        else if(status === 404){
-          // 404 not found
-          console.log("not so good");
-        }
-        else {
-          console.log("nothing happening");
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
