@@ -1,0 +1,27 @@
+.left_create {
+    text-align: left;
+}
+.top_create {
+    vertical-align: top;
+}
+.right_create {
+	float:right;
+	width:68%
+}
+img.inline_create {
+	height:48px; 
+	border:0px !important;
+	margin:0px !important;
+}
+p.first_in_slide {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+code.inline {
+    padding: 5px;
+    border: 1px darkgray solid;
+    border-radius: 5px;
+    background-color: lightgray;
+    font-size: 0.6em;
+}

@@ -1,0 +1,206 @@
+<html>
+
+    <head>
+        <meta charset="UTF8">
+        <link rel="stylesheet" type="text/css" href="../css/App.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/markdown.css">
+        
+    </head>
+    
+    <body>
+        
+        <div class="reveal">
+        
+            <div class="slides">
+                
+                <!-- Slides -->
+                
+                <section>
+                    <table style="allign:center">
+                        <tr>
+                            <td><div class="logo"></td>
+                            <td><h1>JS Co-Learning Night</h1></td>
+                        </tr>
+                    </table>
+                    <h4>RECAP - HTML, CSS & JS</h4>
+                    <div class="bounce arrow"></div>
+                </section>
+                
+                <section>
+                    <h1>HTML &amp; the DOM</h1>
+                    <p> <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</p>
+                </section>
+                
+                <!-- <section>
+                    <h3>What is HTML?</h3>
+                    <div style="height: 400px;position: relative;">
+                        <small class="left">
+                            <br>
+                            <br>
+                            <p>HTML is a markup language for describing web documents (web pages).</p>
+                            <ul>
+                                <li>HTML stands for <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</li>
+                                <li>A markup language is a set of markup tags</li>
+                                <li>HTML documents are described by HTML tags</li>
+                                <li>Each HTML tag characterizes different document content</li>
+                            </ul>
+                        </small>
+                        <div class="right">
+                            <br>
+                        <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My title&lt;/title&gt;    
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href=""&gt;My link&lt;/a&gt;
+    &lt;h1&gt;My header&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>HTML Basics</h3>
+                    <p style="text-align:left;font-style: normal;">
+                        <span style="text-align:start">HTML is designed for marking up text by adding tags such as <span style="color:steelblue">&lt;p&gt;</span> to create HTML elements. HTML tags begin with <span style="color:steelblue">&lt;</span> and end with <span style="color:steelblue">&gt;</span>. Tags often occur in pairs of opening and closing tags. Some tags such as <span style="color:steelblue">&lt;img&gt;</span> always occur alone. Those tags usually (but do not require to) have a trailing slash.&nbsp;</span><br>
+                        <br>
+                        <span style="text-align:start">Tags can have attributes. For example, <span style="color:steelblue">&lt;a&gt;</span> tag has <span style="color:steelblue">href</span> attribute for defining link target. Similarly, <span style="color:steelblue">&lt;img&gt;</span> tag has <span style="color:steelblue">src</span> attribute for defining image source.</span>
+                    </p>
+                </section>
+                
+                <section>
+                    <h3>HTML's tree structure</h3>
+                    
+                    <div style="height: 400px;position: relative;">
+                        <div id="cy" class="right"></div>
+                        <div class="left">
+                            <br>
+                        <pre><code id="domcode">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My title&lt;/title&gt;    
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href=""&gt;My link&lt;/a&gt;
+    &lt;h1&gt;My header&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            <small>Objects in the DOM can be manipulated by JavaScript (<a href="" id="addRemove">add/remove Element</a>)</small>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                
+                <section>
+                    <h3>Use HTML to Structure Site Content</h3>
+                    <h5>html, body, h1, p, strong, em, a, img</h5>
+                    <div style="min-height:500">
+                        <p data-height="400" data-theme-id="0" data-slug-hash="mVgRoa" data-default-tab="result" data-user="secevalliv" class='codepen'>See the Pen <a href='http://codepen.io/secevalliv/pen/mVgRoa/'>HTML TO STRUCTURE</a> by Jose Villaveces (<a href='http://codepen.io/secevalliv'>@secevalliv</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    
+                </section> -->
+                
+                <section>
+                    <h1>CSS</h1>
+                    <p>Cascading Style Sheets</p>
+                </section>
+                
+                <!-- <section>
+                    <h3>What is CSS?</h3>
+                    <div style="height: 400px;position: relative;">
+                        <small id="cssTarget" class="left">
+                            <br>
+                            <br>
+                            <p>CSS is stylesheet language for the web. Makes webpages look good.</p>
+                            <ul>
+                                <li>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</li>
+                                <li>Includes fonts, colors, and many other properties.</li>
+                                <li>Each CSS rule uses properties to apply styles to HTML elements</li>
+                                <li>CSS can be included in the document with <span class="hljs-tag" style="color:steelblue">&lt;<span class="hljs-name">style</span>&gt;</span> or imported from an external file with <span class="hljs-tag" style="color:steelblue">&lt;<span class="hljs-name">link</span>&gt;</span>.</li>
+                            </ul>
+                        </small>
+                        <small class="right">
+                            <br>
+                            <br>
+                            <p>Example Porperties:</p>
+                            <pre>  <input class="cssCheck" type="checkbox" value="color:red"> color: red;
+  <input class="cssCheck" type="checkbox" value="background-color:steelblue"> background-color: steelblue;
+  <input class="cssCheck" type="checkbox" value="display:none"> display: none;
+  <input class="cssCheck" type="checkbox" value="font-family:Times"> font-family: Times;
+                            </pre>
+                        </small>
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>CSS example</h3>
+                    <div style="min-height:500">
+                        <p data-height="400" data-theme-id="0" data-slug-hash="vLMxPY" data-default-tab="result" data-user="secevalliv" class='codepen'>See the Pen <a href='http://codepen.io/secevalliv/pen/vLMxPY/'>vLMxPY</a> by Jose Villaveces (<a href='http://codepen.io/secevalliv'>@secevalliv</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>CSS advanced</h3>
+                    <div style="min-height:500">
+                        <p data-height="400" data-theme-id="0" data-slug-hash="Maqqgr" data-default-tab="result" data-user="xtoq" class='codepen'>See the Pen <a href='http://codepen.io/xtoq/pen/Maqqgr/'>codevember #5 : Fitbit Moon</a> by Smokie Lee (<a href='http://codepen.io/xtoq'>@xtoq</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </section> -->
+                <section>
+                  <h1>JavaScript</h1>
+                </section>
+                
+                <section>
+                    <h3>What is JavaScript?</h3>
+                    <ul>
+                        <li>A programming language for the web, generally executed client-side (<i>in</i> your web browser).</li>
+                        <li>JS code is written in <span style="color:steelblue">'scripts'</span> which are run when the page renders.</li>
+                        <li>There are two ways to include JS:
+                            <ul>
+                                <li>In the document
+                                <pre><code>&lt;script type="text/javascript"&gt;
+    alert("Hello world!");
+&lt;/script&gt;</code></pre></li>
+                                <li>In a separate file<pre><code>&lt;script src="viz.js"&gt;&lt;/script&gt;</code></pre></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3 id="slideTitle">Objects in the DOM can be manipulated by JavaScript</h3>
+                    <pre><code>//Objects in the DOM can be manipulated by JavaScript
+function changeTitle(){
+    var title = document.getElementById("slideTitle");
+    title.innerText = "See?? JS can manipulate dom objects";
+}</code></pre>
+                    <button id="titleButton" type="button">Click Me!</button>
+                </section>
+                
+                <section>
+                    <h3>I'm a scientist, why bother building websites? o_O</h3>
+                    <a style="background-color: #999; position: relative; display: block;" href="https://nodejs.org/en/" target="blank"><img src="../img/nodejs.png" /></a>
+                    <a href="bionode.io" target="superblank"><img src="" /></a>
+                    <a href="biojs.net" target="blankk"><img src="" /></a>
+                </section>
+                
+                <section>
+                    <p><a href="../index.html#/1">Back to program</a></p>
+                </section>
+                
+            </div>
+        </div>
+        
+        
+        <div class="reveal"  style="position: absolute;top: 90%;left: 80%;">
+			<h4 class="vizbi">@ VIZBI 2016</h4>
+		</div>
+        
+        
+    </body>
+    <script src="../js/App.js"></script>
+
+</html>
