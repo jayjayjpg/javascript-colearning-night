@@ -129,17 +129,30 @@ body {
   color: #FFDD33;
   font-size: 1.8em;
   border-bottom: 0px solid #FFC300;
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
-.panorama .cta:hover {
+
+.panorama .small-cta {
+  cursor: pointer;
+  color: #FFDD33;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.panorama .cta:hover,
+.panorama .small-cta:hover {
   color: #FF5733;
   border-color: #FFC300;
   border-bottom-width: 4px;
 }
-.panorama .cta:focus {
+.panorama .cta:focus,
+.panorama .small-cta:focus {
   color: #900C3F;
   border-color: #DAF7A6;
 }
