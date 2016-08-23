@@ -82,17 +82,17 @@ body {
 }
 
 .panorama .blend-2 {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -o-animation-delay: .5s;
+  animation-delay: .5s;
 }
 
 .panorama .blend-3 {
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  animation-delay: 1.2s;
   -webkit-animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
   -o-animation-duration: 1.5s;
@@ -100,10 +100,10 @@ body {
 }
 
 .panorama .blend-4 {
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -o-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
   -o-animation-duration: 1.5s;
@@ -126,7 +126,7 @@ body {
   box-shadow: none;
   text-align: center;
   padding: .75em;
-  color: #FF3300;
+  color: #FFDD33;
   font-size: 1.8em;
   border-bottom: 0px solid #FFC300;
   -webkit-transition: all .3s ease-in;
