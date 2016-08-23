@@ -183,12 +183,21 @@ function changeTitle(){
                 <section>
                     <h3>I'm a scientist, why bother building websites? o_O</h3>
                     <a style="background-color: #999; position: relative; display: block;" href="https://nodejs.org/en/" target="blank"><img src="../img/nodejs.png" /></a>
-                    <a href="bionode.io" target="superblank"><img src="../img/bionode.png" />Bionode - biological data proc</a>
-                    <a href="biojs.net" target="blankk"><img src="../img/logo.png" />BioJS - biological data viz</a>
+                    <p>Data manipulation and much more with <a href="https://nodejs.org/en" target="muchmoreblank">Node.js</a></p>
+                </section>
+                <section>
+                    <h3>I'm a scientist, why bother building websites? o_O</h3>
+                    <a href="http://bionode.io" target="superblank"><img src="../img/bionode.png" /></a>
+                    <p>Use biological important data processing functionalities with <a href="http://bionode.io" target="superblank">Bionode</a></p>
+                </section>
+                <section>
+                    <h3>I'm a scientist, why bother building websites? o_O</h3>
+                    <a href="https://biojs.net" target="blankk"><img src="../img/logo.png" /></a>
+                    <p>Visualize biological data with ready-to-use components with <a href="https://biojs.net" target="moreblank">BioJS</a></p>
                 </section>
                 
                 <section>
-                    <p><a href="../index.html#/1">Back to program</a></p>
+                    <p><a href="../index.html#/1">Back to Home Page</a></p>
                 </section>
                 
             </div>
@@ -202,5 +211,13 @@ function changeTitle(){
         
     </body>
     <script src="../js/App.js"></script>
+    <script>
+      function changeTitle(){
+          var title = document.getElementById("slideTitle");
+          title.innerText = "See?? JS can manipulate dom objects";
+      }
+
+      document.getElementById("titleButton").addEventListener("click", changeTitle);
+    </script>
 
 </html>
